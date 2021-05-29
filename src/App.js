@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordion from './components/Accordion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Accordion
+        title= "Qual o valor máximo de empréstimo com veículo em garantia?"
+        content= "O valor máximo é de R$50.000,00." 
+      />
+
+      <Accordion
+        title= "Qual a quantidade máxima de parcelas?"
+        content= "Financiamos empréstimo em até 12x." 
+      />
+
+      <Accordion
+        title= "Estou negativado. Posso solicitar empréstimo?"
+        content= "Claro! Nossa equipe irá avaliar as melhores condições para o teu perfil." 
+      />  
     </div>
   );
 }
